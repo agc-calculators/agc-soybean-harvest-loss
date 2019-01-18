@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-soybean-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcSoybeanHarvestLoss",
+      "componentPath": "components/agc-soybean-harvest-loss/agc-soybean-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-soybean-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcSoybeanHarvestLossInputs",
+      "componentPath": "components/agc-soybean-harvest-loss-inputs/agc-soybean-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-soybean-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcSoybeanHarvestLossProgress",
+      "componentPath": "components/agc-soybean-harvest-loss-progress/agc-soybean-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-soybean-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcSoybeanHarvestLossResults",
+      "componentPath": "components/agc-soybean-harvest-loss-results/agc-soybean-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-soybean-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcSoybeanHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-soybean-harvest-loss-results-placeholder/agc-soybean-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
